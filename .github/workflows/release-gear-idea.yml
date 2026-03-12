@@ -2,38 +2,38 @@
 
 名称：“齿轮创意发布”
 推：
-分支：['非 vft']
+分支：['非 vft']['非 vft']注册表：ghcr.io: ghcr.io工作流程_调度：]
 工作流程_调度：
 输入：
 服务：
 类型：选择
 描述：服务发布
 选项：
-- 前端
+- 前端前端
 必填：真实
 
 并发：
-AWS_ACCESS_KEY_ID团体${{github.workflow}}-${{github.ref}}
-取消进行中： true: 真的
+AWS_ACCESS_KEY_ID 团体${{github.workflow}}-${{github.ref}}{{github.workflow}}-${{github.ref}}
+取消进行中： true: 真的: 真的
 
-环境：:
-注册表：ghcr.io: ghcr.io
-IMAGE_NAME：${{ github.repository }}: ${{github.repository}}
-AWS_ACCESS_KEY_ID：${{secrets.AWS_ACCESS_KEY_ID }}: ${{秘密.AWS_ACCESS_KEY_ID}}
-AWS_SECRET_ACCESS_KEY: ${{秘密.AWS_SECRET_ACCESS_KEY}}
-AWS_REGION: ${{秘密.AWS_REGION}}
-KUBE_CONFIG_DATA: ${{秘密.KUBE_CONFIG_DATA}}
+环境：::
+注册表：ghcr.io: 克hcr.io: ghcr.io
+IMAGE_NAME：${{ github.repository }}: ${{github.repository}}: ${{github.repository}}
+AWS_ACCESS_KEY_ID：${{secrets.AWS_ACCESS_KEY_ID }}: ${{秘密.AWS_ACCESS_KEY_ID}}: ${{秘密.AWS_ACCESS_KEY_ID}}
+AWS_SECRET_ACCESS_KEY：${{秘密.AWS_SECRET_ACCESS_KEY}}: ${{秘密.AWS_SECRET_ACCESS_KEY}}
+AWS_REGION: ${{秘密.AWS_REGION}}: ${{秘密.AWS_REGION}}行动/结帐@v6姓名: 等环境KUBE_CONFIG_DATA: ${{秘密.KUBE_CONFIG_DATA}}{{秘密.AWS_REGION}}
+KUBE_CONFIG_DATA: ${{秘密.KUBE_CONFIG_DATA}}: ${{秘密.KUBE_CONFIG_DATA}}
 
-职位:
-设置环境标签:
-连续运行: ubuntu-最新版
-输出:
-环境: ${{步骤.get_env.outputs.environment}}
-步骤:
-      - 姓名: 签出存储库
-用途: 姓名
+职位::
+设置环境标签::
+连续运行: 在: ubuntu-最新版
+输出::
+环境: ${{步骤.get_env.outputs.environment}}: ${{步骤.get_env.outputs.environment}}
+步骤::
+- 姓名: 签: 签出存储库
+用途: 姓: 姓名
 
-行动/结帐@v6姓名: 等环境
+行动/结帐@v6姓名: 等: 等环境
 ID: 克等环境
 跑步: |
 echo“环境=生产”>> $GITHUB_OUTPUT
