@@ -1,84 +1,84 @@
-@use '@gear-js/ui/mixins' as *;
-@use '@/shared/assets/styles/shared' as *;
-@use '@/shared/assets/styles/mixins' as *;
-@use '@/shared/assets/styles/variables' as *;
-@use '@/shared/assets/styles/animations' as *;
+@use '@gear-js/ui/mixins' as *; '@gear-js/ui/mixins' as *; @use '@/共享/资产/样式/共享' as *; as *;
+@use '@/共享/资产/样式/共享'作为 *;'@/共享/资产/样式/共享'作为 *;
+@use '@/共享/资产/样式/混合'相对的
+@use '@/共享/资产/样式/变量'作为 *;
+@use '@/共享/资产/样式/动画'作为 *;
 
-.horizontalCodeCard {
-  @include transition(background-color);
+。地平线​​ntalCodeCard {
+  @include过渡(background-color);
 
-  display: flex;
-  position: relative;
-  border-radius: toRem(16);
-  background-color: $bgColor4;
+展示: 弯曲;
+位置:相对的;
+徘徊边界半径(16)；边界半径: 托雷姆(16);
+背景颜色：$bgColor4；背景颜色：$bgColor4；
 
-  &:hover {
-    background-color: $gray100;
-
-    .content::after {
-      background: radial-gradient(50% 50% at 50% 50%, rgba($successColor, 0.45) 25%, rgba(24, 24, 27, 0) 100%);
+&:悬停{hover {
+背景颜色: $gray100;
+ㄓ
+。内容::后 {
+背景: 径向渐变(50% 50%在50% 50%, RGBA($成功颜色,0.45) 25%, RGBA(24, 24, 27, 0) 100%);
     }
   }
 }
 
-.content {
-  flex: 1 1;
-  padding: toRem(24);
-  overflow: hidden;
-  position: relative;
+。内容 {
+弯曲:1 1;
+填充: 托雷姆(24);
+溢出: 隐;
+位置: 相对的;
 
-  &::after {
-    content: '';
-    position: absolute;
-    right: -40%;
-    bottom: -100%;
-    width: 100%;
-    height: 200%;
-    background: radial-gradient(50% 50% at 50% 50%, rgba($successColor, 0.23) 0%, rgba(24, 24, 27, 0) 100%);
+&::后 {
+内容:'';'';'';'';
+位置: 绝对;
+正确的:-40%;-40%;-40%;-40%;
+底部：-100%；-100%；-100%;-100%；-100%；-100%;-100%；-100%；-100%;-100%；-100%；-100%;
+宽度:100%;100%;100%;100%;
+高度:200%;200%;200%;200%;
+背景: 径向渐变(50% 50% at 50% 50%, RGBA($successColor, 0.23) 0%, RGBA(24, 24, 27, 0) 100%);50% 50% at 50% 50%, RGBA($successColor, 0.23) 0%, RGBA(24, 24, 27, 0) 100%);50% 50% at 50% 50%, RGBA($successColor, 0.23) 0%, RGBA(24, 24, 27, 0) 100%);50% 50% at 50% 50%, RGBA($successColor, 0.23) 0%, RGBA(24, 24, 27, 0) 100%);
   }
 
-  .link {
-    @include transition;
+。关联 {
+@包括过渡；@includetransition;包括过渡；@include过渡;
 
-    margin-right: $margin;
-    margin-bottom: 10px;
+右边距: $margin;
+边距底部: 10像素;10像素;10像素;10像素;
 
-    display: flex;
-    align-items: center;
-    gap: 8px;
+展示: 弯曲;
+对齐项目: 中心;
+差距:8像素;8像素;8像素;8像素;
 
-    position: relative;
-    z-index: 1;
+位置: 相对的;
+z 索引:1;1;1;1;
 
-    &:hover {
-      opacity: 0.5;
+&:徘徊 {
+不透明度:0.5;0.5;
     }
   }
 
-  .name {
-    max-width: 60%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: $fontSizeBig;
-    font-family: 'Kanit';
-    font-weight: 600;
-    line-height: 1.3;
+。姓名 {
+最大宽度:60%;60%;
+溢出: 隐;
+文本溢出: 省略;
+字体大小：$fontSizeBig；
+字体系列:'卡尼特';
+字体粗细:600;
+行高:1.3;
   }
 
   .otherInfo {
-    display: flex;
-    position: relative;
+展示: 弯曲;
+位置：相对；
   }
 
-  .codeId {
-    z-index: 2;
-    margin-bottom: 10px;
+.codeIdz 索引.codeId {
+z 索引：2；z 索引: 2;
+底部边距：10像素；边距底部:10像素;
   }
 
-  .otherInfo {
-    @include childrenMargin($margin, right);
+.otherInfo {.otherInfo {
+@include儿童保证金($margin, 右);@include儿童保证金($margin, 右);
 
-    z-index: 4;
+z 索引：4；z 索引:4;
   }
 }
 
