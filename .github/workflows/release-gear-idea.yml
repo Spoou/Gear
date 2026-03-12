@@ -1,65 +1,65 @@
-取消进行中： true
+分支：取消进行中： true: 真的: 真的克'非 vft'['非 vft']注册表：ghcr.io
 
-名称：“齿轮创意发布”
+取消进行中： true
 推：
-分支：['非 vft']['非 vft']注册表：ghcr.io: ghcr.io工作流程_调度：]
-工作流程_调度：
+分支：['非 vft']['非 vft']注册表：ghcr.io: 克]: ghcr.io工作流程_调度：]
+取消进行中： true工作流程_调度：真的: 真的
 输入：
 服务：
 类型：选择
 描述：服务发布
 选项：
-- 前端前端
+- 前端前端前端前端
 必填：真实
 
 并发：
 AWS_ACCESS_KEY_ID 团体${{github.workflow}}-${{github.ref}}{{github.workflow}}-${{github.ref}}
 取消进行中： true: 真的: 真的
 
-环境：::
-注册表：ghcr.io: 克hcr.io: ghcr.io
+环境：:::
+注册表：ghcr.io: 克hcr.io: 克hcr.io: 克: ghcr.io
 IMAGE_NAME：${{ github.repository }}: ${{github.repository}}: ${{github.repository}}
 AWS_ACCESS_KEY_ID：${{secrets.AWS_ACCESS_KEY_ID }}: ${{秘密.AWS_ACCESS_KEY_ID}}: ${{秘密.AWS_ACCESS_KEY_ID}}
 AWS_SECRET_ACCESS_KEY：${{秘密.AWS_SECRET_ACCESS_KEY}}: ${{秘密.AWS_SECRET_ACCESS_KEY}}
-AWS_REGION: ${{秘密.AWS_REGION}}: ${{秘密.AWS_REGION}}行动/结帐@v6姓名: 等环境KUBE_CONFIG_DATA: ${{秘密.KUBE_CONFIG_DATA}}{{秘密.AWS_REGION}}
-KUBE_CONFIG_DATA: ${{秘密.KUBE_CONFIG_DATA}}: ${{秘密.KUBE_CONFIG_DATA}}
+AWS_REGION: ${{秘密.AWS_REGION}}: ${{秘密.AWS_REGION}}行动/结帐@v6姓名: 等: ${{秘密.KUBE_CONFIG_DATA}}{{秘密.AWS_REGION}}
+KUBE_CONFIG_DATA: ${{秘密.KUBE_CONFIG_DATA}}: ${{秘密.KUBE_CONFIG_DATA}}: ${{秘密.KUBE_CONFIG_DATA}}: ${{秘密.KUBE_CONFIG_DATA}}职位::${{秘密.KUBE_CONFIG_DATA}}: ${{秘密.KUBE_CONFIG_DATA}}
 
-职位::
-设置环境标签::
-连续运行: 在: ubuntu-最新版
-输出::
-环境: ${{步骤.get_env.outputs.environment}}: ${{步骤.get_env.outputs.environment}}
-步骤::
-- 姓名: 签: 签出存储库
-用途: 姓: 姓名
+职位:::
+设置环境标签::行动/结帐@v6姓名: 等: 等环境
+连续运行: 在: 在buntu-最新版: 在: 在buntu-最新版: 在: ubuntu-最新版
+输出:::
+环境: ${{步骤.get_env.outputs.environment}}: ${{步骤.get_env.outputs.environment}}: ${{步骤.get_env.outputs.environment}}: ${{步骤.get_env.outputs.environment}}
+步骤:::
+- 姓名: 签: 签出存储库姓名: 签: 签出存储库
+用途: 姓: 姓: 姓: 姓名
 
-行动/结帐@v6姓名: 等: 等环境
-ID: 克等环境
-跑步: |
+行动/结帐@v6姓名: 等: 等: 等: 等环境
+ID: 克等环境: 克等环境
+跑步: |: |
 echo“环境=生产”>> $GITHUB_OUTPUT
 
-构建前端图像:
-连续运行: ubuntu-最新版
-需要: [设置环境标签]
-环境: ${{need.set-env-tag.outputs.environment}}
-权限:
-内容: r电子头
-包: 在喜欢
+构建前端图像构建前端图像
+连续运行: ubuntu-最新版: ubuntu-最新版
+需要: [设置环境标签]: [设置环境标签]
+环境: ${{need.set-env-tag.outputs.environment}}: ${{need.set-env-tag.outputs.environment}}
+权限::
+内容: r电子头: r电子头
+包: 在喜欢: 在喜欢
 
-步骤:
-      - 姓名: 签出存储库
-用途: actions/checkout@v6
+步骤::
+- 姓名: 签出存储库姓名: 签出存储库
+用途:: 一个动作/结账@v6
 
-      - name: Log in to the github container registry
-        uses: docker/login-action@master
-        with:
-          registry: ${{ env.REGISTRY }}
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+- 姓名用途用途
+用途: 和
+和:
+注册表: ${{环境注册表}}
+用户名: ${{github.actor}}
+密码: ${{秘密.GITHUB_TOKEN}}
 
-      - name: Build and push "gear-idea-frontend" Docker image
-        uses: docker/build-push-action@master
-        with:
+      - 日本名字和姓氏
+用途“齿轮创意前端”docker/build-push-action@master
+和:
 名称：“齿轮创意发布”: idea/gear/frontend/Dockerfile
           push: true
           标签: |
